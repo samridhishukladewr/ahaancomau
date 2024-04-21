@@ -4,7 +4,7 @@ function JobSearchPage() {
     const [jobs, setJobs] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [hasSearched, setHasSearched] = useState(false);
-    // Dummy job data
+
     const dummyJobs = [
         { id: 1, title: 'Software Engineer', description: 'Develop and maintain software applications.' },
         { id: 2, title: 'Data Analyst', description: 'Analyze and interpret complex data sets.' },
@@ -19,17 +19,21 @@ function JobSearchPage() {
     ];
 
     useEffect(() => {
-        // Replace this with your actual API call
         setJobs(dummyJobs);
     }, []);
 
     const handleSearch = () => {
-        // Filter jobs based on searchTerm
         const filteredJobs = dummyJobs.filter(job =>
             job.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setJobs(filteredJobs);
         setHasSearched(true);
+    };
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSearch();
+        }
     };
 
     return (
@@ -39,10 +43,10 @@ function JobSearchPage() {
                 type="text"
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
+                onKeyDown={handleKeyDown}
                 placeholder="Search for a job"
             />
             <button onClick={handleSearch}>Search</button>
-            
             <ul>
                 {hasSearched && jobs.map(job => (
                     <li key={job.id}>
