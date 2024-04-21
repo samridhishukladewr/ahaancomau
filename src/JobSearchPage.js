@@ -37,7 +37,7 @@ function JobSearchPage() {
     };
 
     return (
-        <div>
+        <>
             <h1>Job Search</h1>
             <input
                 type="text"
@@ -55,7 +55,7 @@ function JobSearchPage() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 }
 

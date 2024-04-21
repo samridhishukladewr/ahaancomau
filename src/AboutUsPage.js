@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUsPage() {
     return (
-        <div>
+        <>
   <h1>About Ahaan Technologies Pty Limited</h1>
   <p>Ahaan Technologies is Australia’s leading specialised ICT contracting, consulting and recruitment organisation. Our personnel division provides staffing solutions in areas such as ICT, Finance, Admin & HR, Sales and Marketing. We serve Australian and international organisations with over 27 years of experience.</p>
   <h2>AhaanBase - Our Intelligent System</h2>
@@ -17,7 +17,7 @@ function AboutUsPage() {
   <p>We're an accredited preferred supplier to the Australian Federal and State government sectors, holding a DISP membership to service the Department of Defence and manage security-cleared personnel.</p>
   <h2>Our Client Portfolio</h2>
   <p>Our client portfolio includes private and public organisations across various industries such as Telco, Finance, Healthcare, Consulting, IT, and FMCG. With over 28 years of experience, we've become the partner of choice for talent acquisition.</p>
-</div>
+</>
 
     );
 }
