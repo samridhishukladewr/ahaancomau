@@ -2,6 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #fff; /* Change the background color to white */
 }
 
@@ -21,14 +24,20 @@ header nav a {
 main {
     padding: 20px;
     background-color: #fff;
+    flex-grow: 1;
+    min-height: 77vh;
 }
 
+
+
 footer {
-    background-color: #0a0a0a; /* Match the footer color with the header color */
+    background-color: #0a0a0a;
     color: #fff;
     text-align: center;
-    padding: 20px 0; /* Increase padding for a taller footer */
+    padding: 20px 0;
+    margin-top: auto;
 }
+
 .navbar {
     list-style-type: none;
     margin: 0;

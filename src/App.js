@@ -12,7 +12,8 @@ function App() {
     <Router>
       <Header />
       <Main />
-      <Footer /></Router>
+      <Footer />
+    </Router>
       </div>);
 }
 

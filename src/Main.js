@@ -8,13 +8,14 @@ import AboutUsPage from './AboutUsPage';
 
 function Main() {
   return (
+    <main>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/digital-services" element={<DigitalServicesPage />} />
         <Route path="/job-search" element={<JobSearchPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
       </Routes>
-   
+    </main>
   );
 }
 
