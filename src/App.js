@@ -8,13 +8,13 @@ import Footer from './Footer';
 // Import other pages
 
 function App() {
-  return (<div>
+  return (<>
     <Router>
       <Header />
       <Main />
       <Footer />
     </Router>
-      </div>);
+      </>);
 }
 
 export default App;
